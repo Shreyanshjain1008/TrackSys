@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4f5f7;
+  --panel: #ffffff;
+  --text: #172b4d;
+  --muted: #5e6c84;
+  --border: #dfe1e6;
+  --primary: #0c66e4;
+  --primary-strong: #0055cc;
+  --danger: #c9372c;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f141f;
+  --panel: #1d2636;
+  --text: #f2f6ff;
+  --muted: #c0cadb;
+  --border: #3b4a64;
+  --primary: #579dff;
+  --primary-strong: #85b8ff;
+  --danger: #f87171;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(900px 460px at 10% -20%, rgba(12, 102, 228, 0.16), transparent 58%),
+    radial-gradient(800px 420px at 100% 0%, rgba(56, 139, 255, 0.1), transparent 52%),
+    var(--bg);
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(920px 520px at 0% -15%, rgba(87, 157, 255, 0.22), transparent 56%),
+    radial-gradient(860px 500px at 100% -10%, rgba(133, 184, 255, 0.14), transparent 54%),
+    var(--bg);
+}
+
+a {
+  color: var(--primary);
+}
+
+.app-shell {
+  min-height: 100%;
+}
+
+.app-main {
+  padding: 12px 16px 24px;
+}
+
+.app-nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+:root[data-theme="dark"] .app-nav {
+  background: #162033;
+}
+
+.app-brand {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.app-btn {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.16s ease;
+}
+
+.app-btn:hover {
+  transform: translateY(-1px);
+}
+
+.app-btn-ghost {
+  color: var(--text);
+  background: transparent;
+}
+
+.app-btn-primary {
+  color: #fff;
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
+.app-btn-danger {
+  color: #fff;
+  border-color: var(--danger);
+  background: var(--danger);
+}
+
+.bg-white,
+.bg-gray-50,
+.bg-gray-100 {
+  background: var(--panel) !important;
+}
+
+:root[data-theme="dark"] .bg-white,
+:root[data-theme="dark"] .bg-gray-50,
+:root[data-theme="dark"] .bg-gray-100 {
+  color: var(--text) !important;
+}
+
+.text-gray-500,
+.text-gray-600 {
+  color: var(--muted) !important;
+}
+
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4 {
+  color: var(--text);
+}
+
+.border {
+  border-color: var(--border) !important;
+}
+
+.shadow {
+  box-shadow: 0 8px 26px rgba(9, 30, 66, 0.12) !important;
+}
+
+.rounded {
+  border-radius: 12px !important;
+}
+
+input,
+textarea,
+select {
+  background: var(--panel);
+  color: var(--text);
+  border-color: var(--border) !important;
+}
+
+button.bg-blue-600,
+a.bg-blue-600 {
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-strong) 100%) !important;
+  border: none;
+}
+
+:root[data-theme="dark"] .text-blue-600 {
+  color: #9bc2ff !important;
+}
+
+:root[data-theme="dark"] .text-gray-800,
+:root[data-theme="dark"] .text-gray-900,
+:root[data-theme="dark"] .font-medium,
+:root[data-theme="dark"] .font-bold {
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .bg-green-600,
+:root[data-theme="dark"] button.bg-green-600 {
+  background: #15803d !important;
+}
