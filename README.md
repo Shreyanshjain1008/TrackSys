@@ -1,6 +1,6 @@
 # TrackSys
 
-TrackSys is a full-stack issue tracking app built with FastAPI + React.
+TrackSys is a full-stack JIRA like issue tracking application built with FastAPI and React, featuring JWT auth, project/member management, Kanban boards, issue assignment, comments, attachments, real-time updates via WebSocket, and a modern light/dark UI.
 
 It includes:
 - JWT authentication (register/login)
