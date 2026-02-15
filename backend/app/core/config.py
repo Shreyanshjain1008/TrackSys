@@ -2,7 +2,7 @@ import json
 from typing import List, Optional
 
 try:
-    from pydantic_settings import BaseSettings
+    from pydantic import BaseSettings
     from pydantic import field_validator
     _PYDANTIC_V2 = True
 except ImportError:
