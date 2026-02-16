@@ -60,7 +60,7 @@ DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/tracksys
 SECRET_KEY=replace-with-strong-secret
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=10080
-CORS_ORIGINS=["http://localhost:3000"]
+CORS_ORIGINS=["https://track-sys.vercel.app"]
 
 SUPABASE_URL=https://<your-project-ref>.supabase.co
 SUPABASE_BUCKET=tracksys
@@ -82,8 +82,8 @@ uvicorn app.main:app --reload
 ```
 
 Backend URLs:
-- API: `http://localhost:8000`
-- Swagger: `http://localhost:8000/docs`
+- API: `https://tracksys.onrender.com`
+- Swagger: `https://tracksys.onrender.com/docs`
 
 ## Frontend Setup
 
@@ -97,14 +97,14 @@ npm start
 Create `frontend/.env`:
 
 ```env
-REACT_APP_API_URL=http://localhost:8000
+REACT_APP_API_URL=https://track-sys.vercel.app
 REACT_APP_SUPABASE_URL=https://<your-project-ref>.supabase.co
 REACT_APP_SUPABASE_ANON_KEY=<anon-key>
 REACT_APP_SUPABASE_BUCKET=tracksys
 ```
 
 Frontend URL:
-- App: `http://localhost:3000`
+- App: `ttps://track-sys.vercel.app`
 
 ## Current API Summary
 
