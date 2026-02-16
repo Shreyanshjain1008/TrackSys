@@ -104,7 +104,7 @@ REACT_APP_SUPABASE_BUCKET=tracksys
 ```
 
 Frontend URL:
-- App: `ttps://track-sys.vercel.app`
+- App: `https://track-sys.vercel.app`
 
 ## Current API Summary
 
